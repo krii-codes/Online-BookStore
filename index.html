@@ -4,7 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebDev Project</title>
+    <title>Book Showcase | Explore Top Books</title>
+    <meta name="description" content="Discover an amazing collection of books. Flip to explore front and back covers.">
+    <meta name="keywords" content="books, book showcase, explore books, literature">
+    <meta name="author" content="Your Name">
+
+    <!-- Open Graph Meta Tags (for social sharing) -->
+    <meta property="og:title" content="Book Showcase">
+    <meta property="og:description"
+        content="Discover an amazing collection of books. Flip to explore front and back covers.">
+
 
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -113,41 +122,58 @@
 
 <body class="container-fluid">
     <header class="text-light text-center w-100">
-        <h2>Welcome to Book Showcase</h2>
+        <h1>Welcome to Book Showcase</h1>
     </header>
 
-    <ul class="nav justify-content-end bg-black">
-        <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
-        </li>
-    </ul>
+    <nav class="bg-black">
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+            </li>
+        </ul>
+    </nav>
 
     <main class="container">
-        <h3 class="m-3">Explore Books</h3>
-        <div class="images d-flex gap-5 justify-content-center w-100 flex-wrap align-items-center ms-5">
+        <section>
+            <h2 class="m-3">Explore Books</h2>
+            <div class="images d-flex gap-5 justify-content-center w-100 flex-wrap align-items-center ms-5">
 
-            <div class="flip-box">
-                <img src="./public/images/Book1.jpg" alt="Book 1" class="img-fluid fixed-img front">
-                <a href="Book1.html"> <img src="./public/images/Book-back.png" alt="Book Back"
-                        class="img-fluid fixed-img back"></a>
+                <article class="flip-box">
+                    <figure>
+                        <img src="./public/images/Book1.jpg" alt="Book 1 Cover" class="img-fluid fixed-img front">
+                        <a href="Book1.html">
+                            <img src="./public/images/Book-back.png" alt="Book 1 Back Cover"
+                                class="img-fluid fixed-img back">
+                        </a>
+                    </figure>
+                </article>
+
+                <article class="flip-box">
+                    <figure>
+                        <img src="./public/images/Book2.jpg" alt="Book 2 Cover" class="img-fluid fixed-img front">
+                        <a href="Book2.html">
+                            <img src="./public/images/Book-back.png" alt="Book 2 Back Cover"
+                                class="img-fluid fixed-img back">
+                        </a>
+                    </figure>
+                </article>
+
+                <article class="flip-box">
+                    <figure>
+                        <img src="./public/images/Book3.jpg" alt="Book 3 Cover" class="img-fluid fixed-img front">
+                        <a href="Book3.html">
+                            <img src="./public/images/Book-back.png" alt="Book 3 Back Cover"
+                                class="img-fluid fixed-img back">
+                        </a>
+                    </figure>
+                </article>
+
             </div>
-
-            <div class="flip-box">
-                <img src="./public/images/Book2.jpg" alt="Book 2" class="img-fluid fixed-img front">
-                <a href="Book2.html"> <img src="./public/images/Book-back.png" alt="Book Back"
-                        class="img-fluid fixed-img back"></a>
-            </div>
-
-            <div class="flip-box">
-                <img src="./public/images/Book3.jpg" alt="Book 3" class="img-fluid fixed-img front">
-                <a href="Book3.html"><img src="./public/images/Book-back.png" alt="Book Back" class="img-fluid fixed-img back"></a>
-            </div>
-
-        </div>
+        </section>
     </main>
 
     <footer class="text-light text-center w-100 p-1 mt-4">
-        <p>@ 2025 Books Showcase| All Rights Reserved</p>
+        <p>&copy; 2025 Book Showcase | All Rights Reserved</p>
     </footer>
 </body>
 
